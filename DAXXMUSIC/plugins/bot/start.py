@@ -27,19 +27,19 @@ from strings import get_string
 
 
 
-YUMI_PICS = [
-"https://telegra.ph/file/2e85d11aefdf6cd01301b.jpg",
-"https://telegra.ph/file/0a08b180583f13952336a.jpg",
-"https://telegra.ph/file/ace92d59d19127d2d4e89.jpg",
-"https://telegra.ph/file/bb0a28259990c6a978985.jpg",
-"https://telegra.ph/file/ace92d59d19127d2d4e89.jpg",
-"https://telegra.ph/file/a0db46dfacd94e489117b.jpg",
-"https://telegra.ph/file/cd77be2595cdc2fca60a3.jpg",
-"https://telegra.ph/file/632724b3d30c691247c77.jpg",
-"https://telegra.ph/file/a2d01afe4f2cb1d4b650c.jpg",
-"https://telegra.ph/file/94dc035df11dfb159b999.jpg",
-"https://telegra.ph/file/fed9a5b1cbaaefc3a818c.jpg",
-"https://telegra.ph/file/66fd03632cbb38bdb4193.jpg"
+DAISY_PICS = [
+"https://telegra.ph/file/3ca0e53b5604943c1dcc9.jpg",
+"https://telegra.ph/file/24d9f14314ce58c6efa74.jpg",
+"https://telegra.ph/file/73844e707166f442ff3ef.jpg",
+"https://telegra.ph/file/71e1b11d1c8f881500a52.jpg",
+"https://telegra.ph/file/3fec5a206cc3f26031810.jpg",
+"https://telegra.ph/file/5772babff78ef614cd0fe.jpg",
+"https://telegra.ph/file/0dd688fa045e146bd0cba.jpg",
+"https://telegra.ph/file/09501679c7d395a6fef46.jpg",
+"https://telegra.ph/file/b32511341f9b8fa9ed51e.jpg",
+"https://telegra.ph/file/0f69cf467a814fa9edb96.jpg",
+"https://telegra.ph/file/57b886be48fce1f9fa20f.jpg",
+"https://telegra.ph/file/532197d0d4bd314c29d51.jpg"
 
 ]
 
@@ -54,7 +54,7 @@ async def start_pm(client, message: Message, _):
         if name[0:4] == "help":
             keyboard = help_pannel(_)
             return await message.reply_photo(
-                random.choice(YUMI_PICS),
+                random.choice(DAISY_PICS),
                 caption=_["help_1"].format(config.SUPPORT_CHAT),
                 reply_markup=keyboard,
             )
@@ -109,7 +109,7 @@ async def start_pm(client, message: Message, _):
         served_users = len(await get_served_users())
         UP, CPU, RAM, DISK = await bot_sys_stats()
         await message.reply_photo(
-            random.choice(YUMI_PICS),
+            random.choice(DAISY_PICS),
             caption=_["start_2"].format(message.from_user.mention, app.mention, UP, DISK, CPU, RAM,served_users,served_chats),
             reply_markup=InlineKeyboardMarkup(out),
         )
@@ -126,7 +126,7 @@ async def start_gp(client, message: Message, _):
     out = start_panel(_)
     uptime = int(time.time() - _boot_)
     await message.reply_photo(
-        random.choice(YUMI_PICS),
+        random.choice(DAISY_PICS),
         caption=_["start_1"].format(app.mention, get_readable_time(uptime)),
         reply_markup=InlineKeyboardMarkup(out),
     )
@@ -161,7 +161,7 @@ async def welcome(client, message: Message):
 
                 out = start_panel(_)
                 await message.reply_photo(
-                    random.choice(YUMI_PICS),
+                    random.choice(DAISY_PICS),
                     caption=_["start_3"].format(
                         message.from_user.mention,
                         app.mention,
