@@ -28,18 +28,14 @@ from strings import get_string
 
 
 DAISY_PICS = [
-"https://telegra.ph/file/3ca0e53b5604943c1dcc9.jpg",
-"https://telegra.ph/file/24d9f14314ce58c6efa74.jpg",
-"https://telegra.ph/file/73844e707166f442ff3ef.jpg",
-"https://telegra.ph/file/71e1b11d1c8f881500a52.jpg",
-"https://telegra.ph/file/3fec5a206cc3f26031810.jpg",
-"https://telegra.ph/file/5772babff78ef614cd0fe.jpg",
-"https://telegra.ph/file/0dd688fa045e146bd0cba.jpg",
-"https://telegra.ph/file/09501679c7d395a6fef46.jpg",
-"https://telegra.ph/file/b32511341f9b8fa9ed51e.jpg",
-"https://telegra.ph/file/0f69cf467a814fa9edb96.jpg",
-"https://telegra.ph/file/57b886be48fce1f9fa20f.jpg",
-"https://telegra.ph/file/532197d0d4bd314c29d51.jpg"
+"https://telegra.ph/file/1a3c152717eb9d2e94dc2.mp4",
+"https://graph.org/file/ba7699c28dab379b518ca.mp4",
+"https://graph.org/file/83ebf52e8bbf138620de7.mp4",
+"https://graph.org/file/82fd67aa56eb1b299e08d.mp4",
+"https://graph.org/file/318eac81e3d4667edcb77.mp4",
+"https://graph.org/file/7c1aa59649fbf3ab422da.mp4",
+"https://graph.org/file/2a7f857f31b32766ac6fc.mp4",
+
 
 ]
 
