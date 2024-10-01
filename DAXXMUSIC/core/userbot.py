@@ -51,15 +51,13 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("HEROKUFREECC")
-              
                 await self.one.join_chat("ALLTYPECC")
+                await self.one.join_chat("gitwizardbypass")
             except:
                 pass
             assistants.append(1)
             try:
-                await self.one.send_message(config.LOGGER_ID, "Assistant Start.........")
-                                         
+                await self.one.send_message(config.LOGGER_ID, "Assistant Started")
             except:
                 LOGGER(__name__).error(
                     "Assistant Account 1 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin!"
@@ -74,9 +72,8 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("HEROKUFREECC")
-                
-                await self.one.join_chat("ALLTYPECC")
+                await self.two.join_chat("ALLTYPECC")
+                await self.one.join_chat("gitwizardbypass")
             except:
                 pass
             assistants.append(2)
@@ -96,9 +93,8 @@ class Userbot(Client):
         if config.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("HEROKUFREECC")
-                
-                await self.one.join_chat("ALLTYPECC")
+                await self.three.join_chat("ALLTYPECC")
+                await self.one.join_chat("gitwizardbypass")
             except:
                 pass
             assistants.append(3)
@@ -118,9 +114,8 @@ class Userbot(Client):
         if config.STRING4:
             await self.four.start()
             try:
-                await self.four.join_chat("HEROKUFREECC")
-                
-                await self.one.join_chat("ALLTYPECC")
+                await self.four.join_chat("ALLTYPECC")
+                await self.one.join_chat("gitwizardbypass")
             except:
                 pass
             assistants.append(4)
@@ -140,9 +135,8 @@ class Userbot(Client):
         if config.STRING5:
             await self.five.start()
             try:
-                await self.five.join_chat("HEROKUFREECC")
-                
-                await self.one.join_chat("ALLTYPECC")
+                await self.five.join_chat("ALLTYPECC")
+                await self.one.join_chat("gitwizardbypass")
             except:
                 pass
             assistants.append(5)
